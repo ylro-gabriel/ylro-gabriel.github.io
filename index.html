@@ -3,44 +3,68 @@
     <head>
         <title>Test Page: Don't Panic</title>
         <meta charset="utf-8">
-        <style></style>
+        <style>
+            div {
+                border: 1px black solid;
+            }
+            /* div is the selector
+            border is the declaration
+            the rest after border: are the values */
+           /* hold ctrl + shift + p then search for "Sort" */
+            a {
+                color: red;
+            }
+            /* div a {
+                color: green;                
+            } */
+            /* li a {
+                color: magenta;
+                border: 1px black solid;
+            } */
+            #exec-bio {
+                background-color: lightgrey;
+            }
+            #exec-orange {
+                background-color: orange;
+            }
+            .bio-box {
+                border: 1px solid black;
+            }
+            .bio-box a {
+                color: green;
+            }
+           .bio-azure {
+            background-color: azure;
+           }
+
+        </style>
     </head>
+
     <body>
         <h1>I'm an h1</h1>
         <ul>
             <li>
-                <a href="https://example.com/"
-                style="color: red;">Link</a></li>
+                <a href="https://example.com/">Link</a></li>
             </li>
             <li>
-                <a href="https://example.com/"
-                style="color: red;">Link</a></li>
+                <a href="https://example.com/">Link</a></li>
             </li>
             <li>
-                <a href="https://example.com/"
-                style="color: red;">Link</a></li>
+                <a href="https://example.com/">Link</a></li>
             </li>
         </ul>
         <h2>I'm an h2</h2>
-        <div style="border: 1px solid black;">
-            <a href="https://example.com/" style="color: green;">
-                I'm a link
-            </a>
+        <div id="exec-bio" class="bio-box bio-azure">
+            <a href="https://example.com/">I'm a link</a>
         </div>
-        <div style="border: 1px solid black;">
-            <a href="https://example.com/" style="color: green;">
-                I'm a link
-            </a>
+        <div id="exec-orange" class="bio-box bio-azure">
+            <a href="https://example.com/">I'm a link</a>
         </div>
-        <div style="border: 1px solid black;">
-            <a href="https://example.com/" style="color: green;">
-                I'm a link
-            </a>
+        <div class="bio-box bio-azure">
+            <a href="https://example.com/">I'm a link</a>
         </div>
-        <div style="border: 1px solid black;">
-            <a href="https://example.com/" style="color: green;">
-                I'm a link
-            </a>
+        <div class="bio-box bio-azure">
+            <a href="https://example.com/">I'm a link</a>
         </div>
     </body>
 </html>
